@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    background-image: url(bg.jpg);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:max(1000px,100pw);
+    height: 75vh;
+    position: relative;
+}
+body{
+    background-color: black;
+}
+.main .box{
+    height: 75vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+nav img,nav button{
+    position: relative;
+    z-index: 10; 
+}
+.hero{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 11px;
+    padding: 0 29px;
+    
+}
+#firstchild {
+    font-family: "poppins";
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+#secondchild{
+    font-size: 24px;
+    font-weight:bolder;
+    text-align: center;
+}
+#thirdchild{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    opacity: 0.8;
+}
+.sepration{
+    height: 7px;
+    background-color: rgb( 46, 44 , 44);
+    position: relative;
+    z-index: 20;
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(23,23,23,0.2);
+    color: white;
+    border: 1px solid rgba(246,238,238,0.5);
+    padding:11px 11px 11px 11px ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn1{
+    background-color: red;
+    color: white ;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.btn2{
+    background-color: red;
+    color: white ;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 3px 24px;
+    border: 1px solid black;
+}
+.hero-button{
+    padding-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    padding:7px 91px 8px 14px ;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgba(246,238,238,0.5);
+}
+
+
+/* from here section tag started....... */
+
+.first-sec{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+@media screen and (max-width:1300px){
+    .first-sec{
+        flex-wrap: wrap;
+    }
+
+}    
+
+
+.sec-image1{
+    position: relative;
+}
+.sec-image1 img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.sec-image1 video{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 555px;
+}
+.sec-text1 div{
+    display: flex;
+    flex-direction: column;
+}
+#secid1{
+    font-size: 48px;
+    font-weight: bolder;
+}
+#secid2{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* from here faq started......... */
+.faq{
+    background-color: black;
+    color: white;
+    padding-top: 34px;
+    padding-bottom: 15px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 32px;
+}
+.faq-box{
+    display:flex ;
+    background-color: grey;
+    color: white;
+    padding: 24px;
+    max-width: 40vw;
+    margin: 10px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s ease-out; 
+}
+.faq-box:hover{
+    background-color: red;
+    color: black;
+}
+.faq-box svg{
+    filter: invert(1);
+}
+.faq-text{
+    font-size: 20px;
+}
+.faq h4{
+    text-align: center;
+    font-size: 18px;
+    margin: 12px;
+}
+
+
+/* from here footer  */
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer a{
+    color: white;
+}
+
+
+/* media */
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
